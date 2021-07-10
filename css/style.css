@@ -1,0 +1,313 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 15;
+    background: linear-gradient(#92afff, #03c6fc);
+}
+
+#navbar ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 12px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+#navbar ul li a:hover {
+    font-weight: bold;
+}
+
+#navbar ul li {
+    margin: 0px 12px;
+    padding: 5px 15px;
+}
+
+#navbar img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 160px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+#newnav {
+    display: none;
+}
+
+
+/* Slider Part starts from here */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: rgb(218, 245, 255);
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 37vw;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f0ff1b;
+    font-size: 2.5rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px 0px 0 rgb(163, 101, 0), 1px 1px 0 rgb(71, 9, 0), 2px 2px 0 rgb(-21, -83, 0), 3px 3px 2px rgba(0, 0, 0, 0.5), 3px 3px 1px rgba(0, 0, 0, 0.5), 0px 0px 2px rgba(0, 0, 0, .2);
+}
+
+#Dots {
+    position: absolute;
+    top: 35vw;
+    left: 48%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(158, 158, 158);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #ffffff;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: .5s;
+    animation-name: fade;
+    animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+#About {
+    background-color: rgb(218, 245, 255);
+    padding: 10px 8vw;
+}
+
+#About h1 {
+    text-align: center;
+    text-shadow: 0px 0px 0 rgb(30, 45, 255), 1px 1px 0 rgb(45, 213, 255), 2px 2px 0 rgb(-21, -83, 0), 3px 3px 2px rgba(58, 180, 250, 0.5), 3px 3px 1px rgba(61, 200, 255, 0.5), 0px 0px 2px rgba(22, 131, 255, 0.2);
+}
+
+.right-img {
+    display: flex;
+    background-color: rgb(182, 216, 255);
+    border: .5px solid rgb(83, 83, 255);
+    box-shadow: 8px 9px 40px -26px rgba(18, 124, 250, 0.74);
+    border-radius: 18px;
+    margin: 20px 0px;
+    min-height: 48vh;
+}
+
+.right-img img {
+    width: 140vw;
+    height: 48vh;
+    border-radius: 18px;
+}
+
+.left-img {
+    display: flex;
+    min-height: 48vh;
+    background-color: rgb(182, 216, 255);
+    border: .5px solid rgb(83, 83, 255);
+    box-shadow: 8px 9px 40px -26px rgba(18, 124, 250, 0.74);
+    border-radius: 18px;
+    margin: 20px 0px;
+}
+
+.left-img img {
+    width: 140vw;
+    height: 48vh;
+    border-radius: 18px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+.content h2 {
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.content p {
+    text-align: center;
+    color: #181414;
+}
+
+#quotes {
+    background-color: rgb(218, 245, 255);
+    padding: 10px 13vw;
+}
+
+#quotes h1 {
+    padding: 12px 10px;
+    text-align: center;
+    text-shadow: 0px 0px 0 rgb(30, 45, 255), 1px 1px 0 rgb(45, 213, 255), 2px 2px 0 rgb(-21, -83, 0), 3px 3px 2px rgba(58, 180, 250, 0.5), 3px 3px 1px rgba(61, 200, 255, 0.5), 0px 0px 2px rgba(22, 131, 255, 0.2);
+}
+
+.comment {
+    border-left: 8px solid lightskyblue;
+    padding: 5px 15px;
+    margin: 20px 10px;
+}
+
+.comment p {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.comment li {
+    font-size: 1.2em;
+    list-style: none;
+    font-style: italic;
+}
+
+#Image-Block {
+    background-color: rgb(218, 245, 255);
+    padding: 10px 13vw;
+}
+
+#Image-Block h1 {
+    padding: 12px 10px;
+    text-align: center;
+    text-shadow: 0px 0px 0 rgb(30, 45, 255), 1px 1px 0 rgb(45, 213, 255), 2px 2px 0 rgb(-21, -83, 0), 3px 3px 2px rgba(58, 180, 250, 0.5), 3px 3px 1px rgba(61, 200, 255, 0.5), 0px 0px 2px rgba(22, 131, 255, 0.2);
+}
+
+.images {
+    display: flex;
+}
+
+.images img {
+    border: 4px solid rgb(176, 190, 255);
+    box-shadow: 8px 9px 62px -26px rgba(164, 18, 250, 0.74);
+    border-radius: 12px;
+    width: 45%;
+    margin: 22px 22px;
+}
+
+
+/* Footer part starts from here */
+
+footer {
+    background-color: rgb(218, 245, 255);
+}
+
+.footer-1 {
+    display: block;
+    margin: 0px 34px;
+    padding: 5px 12px;
+    bottom: 0;
+    text-align: center;
+}
+
+.copyright {
+    margin: 5px 30px;
+}
+
+.back {
+    margin: 5px 15px;
+}
+
+.back a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(73, 73, 255);
+}
+
+.back a:hover {
+    color: blue;
+}
+
+.links {
+    text-align: center;
+}
+
+.links span img {
+    margin: 3px 12px;
+    width: 32px;
+}
+
+.links span img:hover {
+    transform: scale(1.4);
+}
