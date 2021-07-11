@@ -146,3 +146,12 @@
         margin: 5px 0px;
     }
 }
+@media (max-width:400px) {
+    .mySlides img {
+        height: 50vw;
+    }
+    #Dots {
+        top: 43vw;
+        left: 40%;
+    }
+}
