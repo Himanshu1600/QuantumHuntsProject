@@ -146,7 +146,7 @@
         margin: 5px 0px;
     }
 }
-@media (max-width:400px) {
+@media (max-width:500px) {
     .mySlides img {
         height: 50vw;
     }
